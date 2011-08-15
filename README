@@ -1,0 +1,100 @@
+_______________________________________________________________________________
+Le But du projet :
+=================
+
+	BEANZ PHP Framework, se veux être une base simple et rapide pour réaliser des 
+sites web, cms , blogs ou autres suivant vos envies ou celle d'un client :) 
+simplement et rapidement. 
+
+Le BEANZ Dispose de plusieurs outils pour vous aider a réaliser votre projet et 
+à le mettre en place rapidement aussi bien pour le développement, que pour le 
+design. 
+
+Le BEANZ dispose également d'une documentation complete qui vous aidera a 
+concevoir votre site.
+
+_______________________________________________________________________________
+DESCRIPTION :
+============
+
+	Le BEANZ est codé pour PHP 5.3 entierement en POO suivant le modele MVC.
+Il utilise les MOTIFS DE CODE (Design pattern) les plus connus tel que 
+Factory, FactoryMethod, Decorator, Observer, Adaptor...
+
+La gestion de la base de donnée se fera via PDO en utilisant le model 
+DAL, DAO, CRUD, ORM avec une support des relations (OnoeToOne, OneToMany, 
+ManyToMany)
+
+Le BEANZ disposes des capacités suivantes : (* : objet a réalisé)
+
+	LE NOYAU : (/Kernel/Core/)
+	=========	
+	- Gestion de parametres de configuration via fichiers XML
+	- Génreration de LOG via fichier texte avec parser de TAGS, ou au format XML 
+		ou encore dans la BDD. Plus tentative d'envoie d'un mail en cas d'echec 
+		d'ecriture du log
+	- Gestion des erreurs et des exptions (affichage, envoie par mail, log dans un 
+		fichier texte ou XML, log dans la BDD, ect... )
+	- Gestion des Sessions via BDD et/ou cookies avec protection XSS/CLRF/TOKEN....
+	- Gestion d'un systeme de cache
+	- Génération de code et de formulaire HTML suivant la norme HTML5
+	- Gestion de formulaires et de validation via PHP/JQUERY et/ou la norme HTML 5	
+	- Gestion d'un systeme de TEMPLATE simple pour le WEBDESIGNER	
+	- Outils "static" pour les fonctions de développement, sur la sécurité, les chaines 
+		de caractéres ect...
+	* Génération de code Javascript/Ajax en utilisant la librairie JQUERY
+	
+		- Les composants additionnel :
+			===========================				
+					- BotTracker( détection des robots "chercheur"/"Spammeur" ou privé
+					- Cloaker (syteme d'optimisation SEO)
+	
+	FRAMEWORK :
+	==========	
+			- Gestion des URLs via un Dispatcher/Router et de gestionnaires de 
+				Requetes/Réponses 
+			
+			- Modele MVC : 
+			  ===========				
+				- Gestion du MODEL ( derivé de notre objet ORM)
+				- Gestion de la VUE (utilisant notre systeme de Templates et notre générateur 
+					de code HTML 5
+				- Gestion du CONTROLLER
+																		
+			- Gestion des applications 			
+			* Interface d'administration commune de base
+			
+	APPLICATION :
+	============	
+		- Module MVC de gestion de Membres avec support d'authentification sécurisé
+		- Module MVC de gestion d'un blog simple(news, articles, pages, tags, commentaires)
+_______________________________________________________________________________
+CONCLUSION :
+===========		
+	je ne suis qu'un simple amateur en programmations. J'ai souvent eu des projets
+personnel ou professionnel de creation de sites "dynamique".
+Il existe dans la jungle de PHP de nombreux Framework ou CMS d'excellente qualité.
+Tel que Zend, Cake, Symphony, Drupal, Joomla, WordXpress ect.... avec leurs avantages 
+et leurs defauts.
+	
+	Avec les framework tout est a faire Module de BDD, gestion des authorisations, interface
+d'administration ect..... 
+Ou encore le gestionnaire de template n'est pas assez souple et ou le PHP est intrusif.
+(comme Cake par exemple)
+La pluspart du temps l'apprentissage du framework est long afin de parvenir aux résultats 
+voulus et de saisir toutes les subtilités de celui-ci.
+
+	Avec les CMS, l'avantage tout est la ou presque. Mais leur interface d'aministration de 
+vraies usines a gaz. Et souvent les systemes de templates sont figés a quelques mise en page. 
+Ce qui a pour effets que tous ces sites se ressemblent plus ou moins.
+
+Bref avoir un systeme entre-deux serait pour moi l'ideal pour repondre a mes besoins d'ou
+la creation du BEANZ et la volonté et la fierté du "C'est Nous qui l'avons fait !"
+
+_______________________________________________________________________________
+
+
+
+
+
+_______________________________________________________________________________
